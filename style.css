@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Open+Sans:wght@300;400;600;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Montserrat', sans-serif;
+   font-family: 'Open Sans', sans-serif;
+   font-family: 'Poppins', sans-serif;
+}
+
+body {
+   height: 100%;
+}
+
+.container {
+   margin: 0 4rem;
+}
+
+.navStyle {
+   display: flex;
+   align-items: center;
+   padding: 0.8rem 0;
+}
+
+.navBackground {
+   background-color: gray;
+}
+
+.navStyle i {
+   margin-right: 0.3rem;
+}
+
+.navStyle h1 {
+   font-size: 2.2rem;
+}
+
+.addNotes {
+   text-align: right;
+   padding: 1em 0;
+}
+
+.addNotes button {
+   background-color: oldlace;
+   border: none;
+   font-size: 1.3rem;
+   font-weight: 600;
+   padding: 0.5em 0.7em;
+   border-radius: 0.3em;
+   cursor: pointer;
+}
+
+.noteParent {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   place-items: center;
+}
+
+.notes {
+   display: flex;
+   margin-bottom: 1.5em;
+}
+
+.main {
+   width: 300px;
+   height: 150px;
+   padding: 1em;
+   font-size: 1rem;
+   border: 1px solid black;
+}
+
+.notes .takeNotes textarea {
+   font-size: 1rem;
+   padding: 1em;
+   scroll-behavior: smooth;
+   width: 300px;
+   height: 150px
+}
+
+.notes .takeNotes textarea:focus {
+   outline: none;
+}
+
+.noteButtons {
+   display: flex;
+   flex-direction: column;
+   gap: 0.3em;
+   margin: 0 0.4em;
+}
+
+.noteButtons button {
+   cursor: pointer;
+   border: none;
+   font-size: 1.3rem;
+   background-color: #fff;
+}
+
+.hidden {
+   display: none;
+}
+
+@media (max-width: 728px) {
+   .container {
+      margin: 0 1rem;
+   }
+
+   .navStyle h1 {
+      font-size: 1.7rem;
+   }
+
+   .addNotes button {
+      font-size: 1rem;
+   }
+
+   .noteParent {
+      display: flex;
+      gap: 4px;
+      flex-direction: column;
+   }
+}
